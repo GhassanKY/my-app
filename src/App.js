@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { CounterApp } from './EjercicioCinco/CounterApp';
+import { SumaMultiplicacion } from './EjercicioCuatro/SumaMultiplicacion';
+import { AñoComponent } from './EjercicioDos/AñoComponent';
+import { FooterComponent } from './EjercicioUno/FooterComponent';
+import { HeaderComponent } from './EjercicioUno/HeaderComponent';
+import { NavBarComponent } from './EjercicioUno/NavBarComponent';
+import { TablaCoches } from './TercerEjercicio/TablaCoches';
+
 
 function App() {
+
+  const multiplicacion = (a, b) =>{
+
+   return a*b
+
+  }
+
+  
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <HeaderComponent title="Hola Mundo" />
+      <NavBarComponent />
+      <AñoComponent />
+      <TablaCoches />
+      <SumaMultiplicacion multiplicacion={multiplicacion} />
+      <CounterApp/>
+      <FooterComponent />
+
+
     </div>
   );
 }
