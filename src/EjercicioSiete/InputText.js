@@ -20,7 +20,7 @@ export const InputText = () => {
 
         <form onSubmit={ev => {ev.preventDefault()} }>
 
-        <input value={} onChange={handleChange} className='form-control' placeholder='Ingresa un valor'></input>
+        <input onChange={handleChange} className='form-control' placeholder='Ingresa un valor'></input>
 
         </form>
     </div>
