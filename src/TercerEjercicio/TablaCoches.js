@@ -39,7 +39,7 @@ export const TablaCoches = () => {
         }
     ]
 
-    const CochesMap = coches.map((Coches, index) =>
+    const CochesMap = coches.map((Coches) =>
 
         <tr key={Coches.id}>
             <td> {Coches.Modelo} </td>

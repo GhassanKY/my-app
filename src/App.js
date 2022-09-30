@@ -3,6 +3,8 @@ import './App.css';
 import { CounterApp } from './EjercicioCinco/CounterApp';
 import { SumaMultiplicacion } from './EjercicioCuatro/SumaMultiplicacion';
 import { AñoComponent } from './EjercicioDos/AñoComponent';
+import { Colores } from './EjercicioSeis/Colores';
+import { InputText } from './EjercicioSiete/InputText';
 import { FooterComponent } from './EjercicioUno/FooterComponent';
 import { HeaderComponent } from './EjercicioUno/HeaderComponent';
 import { NavBarComponent } from './EjercicioUno/NavBarComponent';
@@ -29,6 +31,8 @@ function App() {
       <TablaCoches />
       <SumaMultiplicacion multiplicacion={multiplicacion} />
       <CounterApp/>
+      <Colores/>
+      <InputText/>
       <FooterComponent />
 
 
